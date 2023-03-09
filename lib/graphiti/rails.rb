@@ -36,7 +36,7 @@ module Graphiti
   end
 end
 
-ActiveSupport.on_load(:action_controller) do
+ActiveSupport.on_load(:action_controller_api) do
   include Graphiti::Rails::Context
   include Graphiti::Rails::Debugging
 
